@@ -34,6 +34,7 @@ const TABLE_ROWS = [
 
 const TableStasiun = () => {
   return (
+    <>
     <Card className="h-full w-full">
       <CardHeader floated={false} shadow={false} className="rounded-none">
         <div className="mb-8 flex items-center justify-between gap-8">
@@ -51,7 +52,7 @@ const TableStasiun = () => {
         </div>
         
       </CardHeader>
-      <CardBody className=" px-0">
+      <CardBody className="overflow-x-auto px-0">
         <table className="mt-4 w-full min-w-max table-auto text-left">
           <thead>
             <tr>
@@ -193,6 +194,8 @@ const TableStasiun = () => {
         </Button>
       </CardFooter>
     </Card>
+    <div></div>
+    </>
   );
 };
 
